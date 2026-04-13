@@ -1,0 +1,209 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tony Yu} \\ \vspace{1pt}
+    \small 571-778-8459 $|$ \href{mailto:tonyyu2170@gmail.com}{\underline{tonyyu2170@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/tonysyu}{\underline{linkedin.com/in/tonysyu}} $|$
+    \href{https://github.com/tonyyu2170}{\underline{github.com/tonyyu2170}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northwestern University}{Evanston, IL}
+      {Bachelor of Science in Applied Mathematics, Concentration in Computer Science}{Expected 2029}
+    \begin{itemize}[leftmargin=0 in, label={}]
+        \small{\item{
+         \textbf{GPA}{: 4.0} \\
+         \textbf{Relevant Coursework}{: Data Structures and Algorithms, Linear Algebra, Multivariable Calculus, Differential Equations, Discrete Math, Real Analysis, Physics}
+        }}
+     \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Embedded Systems Engineer}{Sep 2025 -- Present}
+      {NU Solar (Club)}{Evanston, IL}
+      \resumeItemListStart
+        \resumeItem{Building embedded software systems that power a fully solar-electric, street-legal vehicle}
+        \resumeItem{Developed C modules on top of the Zephyr framework for wireless Bluetooth communication via the Nordic UART service}
+        \resumeItem{Optimized Bluetooth low energy code to save lightboard power consumption by 90\%}
+        \resumeItem{Collaborated via Git/GitHub in a cross-functional team using agile development workflows}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Research Intern}{Jun 2024 -- Sep 2024}
+      {American University}{Washington DC}
+      \resumeItemListStart
+        \resumeItem{Analyzed Medicare Part D drug spending trends using R (tidyverse, ggplot2, tidyr) on a dataset of 14,000 types of medication to identify inefficiencies and high-growth cost categories}
+        \resumeItem{Built automated cleaning and visualization pipelines that reduced manual processing time by 60\%}
+        \resumeItem{Co-authored data summaries contributing to a paper and presentation on healthcare expenditure trends}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Image Detection Model} $|$ \emph{Python, Git, OpenCV, YOLO, Tkinter}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a real-time image detection pipeline using YOLOv11 and OpenCV for object recognition from live webcam input}
+            \resumeItem{Implemented multiprocessing and a custom Tkinter-based GUI to dynamically display detection feedback}
+            \resumeItem{Trained and fine-tuned a YOLO model on custom image data, improving detection accuracy and performance on edge devices}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TGTG} $|$ \emph{Python, Git, REST APIs, CLI}}{}
+          \resumeItemListStart
+            \resumeItem{Automated the process of securing high-demand, limited-quantity food items by reverse-engineering interactions with the Too Good To Go API}
+            \resumeItem{Implemented secure credential handling using environment variables to cache access tokens, refresh tokens, and cookies across sessions}
+            \resumeItem{Created a terminal-based UI for users to schedule target reservation times, dynamically tracking API responses and gracefully aborting orders upon user confirmation}
+            \resumeItem{Successfully secured 20+ high demand items, often competing against hungry university students for only one surprise bag}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Connect 4 Solver} $|$ \emph{C++, Git, Alpha-Beta Pruning, Negamax, Bitboards}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented an optimized negamax + alpha-beta pruning engine, achieving perfect-play results within milliseconds for mid-depth positions}
+            \resumeItem{Leveraged heuristic evaluation functions, bitboards, transposition tables, iterative deepening, and null window search to boost runtime efficiency by over 100x}
+            \resumeItem{Packaged solution with test harness and modular design for future unit testing}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Rust, Java, MATLAB, JavaScript, HTML/CSS, R, LaTeX} \\
+     \textbf{Frameworks}{: Zephyr RTOS, Flask} \\
+     \textbf{Developer Tools}{: Git, GitHub, SEGGER J-Link, nRF Connect SDK, VS Code, Visual Studio, IntelliJ} \\
+     \textbf{Libraries}{: Pandas, NumPy, TensorFlow, YOLO, OpenCV, Tkinter, Tidyverse (ggplot2, dplyr, tidyr)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
