@@ -94,15 +94,8 @@
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
 \begin{center}
     \textbf{\Huge \scshape Tony Yu} \\ \vspace{1pt}
@@ -125,33 +118,29 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+  %-----------------------------------------
+    % Solar sublead is going here soon
+  %-----------------------------------------
+
     \resumeSubheading
       {Embedded Systems Engineer}{Sep 2025 -- Present}
       {NU Solar (Club)}{Evanston, IL}
       \resumeItemListStart
-        \resumeItem{Building embedded software systems that power a fully solar-electric, street-legal vehicle}
-        \resumeItem{Developed C modules on top of the Zephyr framework for Bluetooth communication via the Nordic UART service}
-        \resumeItem{Optimized Bluetooth low energy code to save lightboard power consumption by 90\%}
-        \resumeItem{Collaborated via Git/GitHub in a cross-functional team using agile development workflows}
+        \resumeItem{Built embedded software systems that process telemetry data and power a fully solar-electric, street-legal vehicle}
+        \resumeItem{Developed C modules on top of the Zephyr framework for Bluetooth communication via the Nordic UART service, optimizing BLE systems to reduce lightboard power consumption by over 90\% and driver safety by over 20\%}
+        \resumeItem{Led a subteam of three members, facilitating cross-functional collaboration with electrical and mechanical subteams through code reviews and standups to ensure reliable data transmission and power management across the vehicle}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
+
+  %-----------------------------------------
+    % SURG research going here soon
+  %-----------------------------------------
 
     \resumeSubheading
       {Research Intern}{Jun 2024 -- Sep 2024}
       {American University}{Washington DC}
       \resumeItemListStart
-        \resumeItem{Analyzed Medicare Part D drug spending trends using R (tidyverse, ggplot2, tidyr) on a dataset of 14,000 types of medication to identify inefficiencies and high-growth cost categories}
-        \resumeItem{Built automated cleaning and visualization pipelines that reduced manual processing time by 60\%}
-        \resumeItem{Co-authored data summaries contributing to a paper and presentation on healthcare expenditure trends}
+        \resumeItem{Analyzed Medicare Part D drug spending trends using R (tidyverse, ggplot2, tidyr) on a dataset of 14,000 types of medication to identify inefficiencies and high-growth cost categories, compiling findings in a paper and presentation}
+        \resumeItem{Built automated cleaning and visualization pipelines that reduced manual processing time by over 60\%}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -161,24 +150,28 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Paper Zoo} $|$ \emph{React, Next.js, Tailwind CSS, TypeScript, Supabase, Vercel, Gemini API, Canvas API}}{}
+          {\textbf{Paper Zoo} $|$ \emph{React, Next.js, Tailwind CSS, TypeScript, Supabase, Vercel, Gemini API}}{}
           \resumeItemListStart
             \resumeItem{Engineered a full-stack web app game that transforms physical oragami creations into digital characters}
-            \resumeItem{Developed a dynamic, responsive UI with Tailwind CSS, integrating complex gamification features like draggable, unlockable pixel-art characters mapped to physics engines}
             \resumeItem{Leveraged Gemini API to algorithmically evaluate user-submitted physical origami folds and provide custom tutoring during the folding process to increase user accuracy by 50\%}
             \resumeItem{Architected a scalable backend with Supabase for user authentication and database, allowing historical fold performance tracking, community multiplayer integration, and real-time synchronization across active sessions}
           \resumeItemListEnd
       \resumeProjectHeading
+          {\textbf{suppl.ai} $|$ \emph{Python, React, Next.js, Tailwind CSS, TypeScript, PostgresSQL, FastAPI}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an AI driven pipeline to mitigate exposure from global supply chain issues, saving time by over 95\%}
+            \resumeItem{Implemented a three-agent swarm (Scout/Analyst/Strategist) in Dedalus VMs that communicates exclusively via Postgres over a 14-table async SQLAlchemy schema, with idempotent writes and auto-reconnecting event bus}
+            \resumeItem{Shipped the full stack end-to-end: FastAPI + WebSockets backend, Next.js / React / Zustand / react-globe.gl interactive dashboard with live agent activity, atomic approvals that flip shipment status + write audit instantly}
+            \resumeItem{Won a \$600 Mac Mini from the HackPrinceton Spring 2026 Eragon Sponsor Track}
+          \resumeItemListEnd
+      \resumeProjectHeading
           {\textbf{TGTG} $|$ \emph{Python, Git, REST APIs, CLI}}{}
           \resumeItemListStart
-            \resumeItem{Automated the process of securing high-demand, limited-quantity food items by reverse-engineering interactions with the Too Good To Go API}
-            \resumeItem{Implemented secure credential handling using environment variables to cache access tokens, refresh tokens, and cookies across sessions}
-            \resumeItem{Created a CLI for users to schedule target reservation times, dynamically tracking API responses and gracefully aborting orders upon user confirmation}
-            \resumeItem{Successfully secured 20+ high demand items, often competing against hungry university students for only one surprise bag}
+            \resumeItem{Automated the procurement of high-demand inventory by reverse-engineering the Too Good To Go REST API, building a CLI tool to target specific release windows and dynamically track responses}
+            \resumeItem{Implemented secure credential handling using environment variables to cache access tokens, refresh tokens, and cookies across sessions, reducing authentication overhead by over 50\%}
+            \resumeItem{Successfully secured 20+ limited-quantity items by optimizing request timing and efficiency to outpace organic Northwestern University student traffic during peak demand periods with a historic 100\% success rate}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
-
-
 
 
 %-----------PROGRAMMING SKILLS-----------
@@ -192,13 +185,20 @@
     }}
  \end{itemize}
 
+
  %-----------Awards-----------
 \section{Awards}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Wildhacks 2026}{: Track Winner} \\
+     \textbf{Wildhacks 2026}{: Track Winner (Childhood Game)} \\
+     \textbf{HackPrinceton Spring 2026}{: Track Winner (Eragon Sponsor)} \\
+     \textbf{Northwestern Dean's High Honors List}{: Fall 2025 - Winter 2026} \\
+
+     %-----------------------------------------
+     % imc prosperity going here next
+     %-----------------------------------------
+     
     }}
  \end{itemize}
 
-%-------------------------------------------
 \end{document}
